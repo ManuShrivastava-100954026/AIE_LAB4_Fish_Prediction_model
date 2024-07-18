@@ -1,58 +1,84 @@
+/* General body styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #fff;
 }
 
+/* Container styling */
 .container {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-h1 {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 350px;
     text-align: center;
-    margin-bottom: 1.5rem;
 }
 
+/* Heading styling */
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Form styling */
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+/* Label styling */
 label {
     margin-bottom: 0.5rem;
     font-weight: bold;
+    color: #fff;
 }
 
+/* Input styling */
 input {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1rem;
 }
 
+input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+/* Button styling */
 button {
-    padding: 0.7rem;
+    padding: 0.7rem 1.5rem;
     background: #007bff;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 1rem;
+    transition: background 0.3s ease;
 }
 
 button:hover {
     background: #0056b3;
 }
 
+/* Prediction text styling */
 h2 {
-    text-align: center;
     margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
 }
